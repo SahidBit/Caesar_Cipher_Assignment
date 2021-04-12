@@ -36,7 +36,18 @@ public class caesar {
 	        return plainT;
 	    }
 	 
+	    public static void main(String[] args) {
+	        Scanner scan = new Scanner(System.in);
+	        System.out.println("Enter the text message to be encrypted ");
+	        String msg = new String();
+	        msg = scan.next();
+	        System.out.println(" Encrypted Text : " + encoding(msg, 4));
+	        System.out.print(" Decryptd Text : ");
+	        System.out.print(decoding(encoding(msg, 4), 4));
+	        scan.close();
+	    }
+	}
 
-} 
+ 
 
 
